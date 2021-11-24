@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
-  res.render("homepage");
+  res.render("createcard");
 });
 app.get("/people/:id", (req, res) => {
   res.render("people");

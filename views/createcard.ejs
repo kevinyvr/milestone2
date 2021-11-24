@@ -1,10 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body></body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="/styles.css">
+  <title>Create your card</title>
+</head>
+
+<body class="createCard">
+  <main class="has-dflex-center">
+    <div>
+      <div class="left">&nbsp;</div>
+      <div class="right">
+
+        <form method="post" action="/createsite">
+          <h1>Create your DevCard</h1>
+          <input type="text" name="fullname" placeholder="Your Full Name" />
+          <textarea name="about" placeholder="About Me"></textarea>
+          <h3>Technologies you Know:</h3>
+          <ul>
+            <li><input type="checkbox" name="tech" value="html"><label for="tech">HTML</label></li>
+            <li><input type="checkbox" name="tech" value="js"><label for="tech">JS</label></li>
+            <li><input type="checkbox" name="tech" value="react"><label for="tech">React</label></li>
+            <li><input type="checkbox" name="tech" value="css"><label for="tech">CSS</label></li>
+            <li><input type="checkbox" name="tech" value="git"><label for="tech">Git</label></li>
+            <li><input type="checkbox" name="tech" value="node"><label for="tech">Node.js</label></li>
+          </ul>
+
+          <input type="url" name="githublink" placeholder="Github URL" />
+          <input type="url" name="twitterlink" placeholder="Twitter URL" />
+
+          <input type="text" name="favbooks" placeholder="Favourite Books (Seperate by comma)" />
+          <input type="text" name="favartists" placeholder="Favourite Artists (Seperate by comma)" />
+
+          <button type="submit" class="btn btn-primary">Create Site</button>
+        </form>
+      </div>
+    </div>
+  </main>
+</body>
+
 </html>

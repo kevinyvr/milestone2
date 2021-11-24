@@ -118,6 +118,74 @@ main section .mini-cards span:hover svg {
   color: #22212c;
 }
 
+.createCard {
+  background:none;
+  background-color:#333;
+}
+.createCard main {
+  padding:0;
+  margin:0;
+}
+.createCard main>div {
+  display: flex;
+}
+
+.createCard div.left,
+.createCard div.right {
+  flex: 50%;
+  display: flex;
+  justify-content: center;
+}
+.createCard div.right {
+  background-color: #fff;
+  color:#000;
+  min-height: 100vh;
+}
+.createCard img {
+  margin-bottom:30px;
+}
+
+.createCard input[type=text],
+.createCard input[type=url] {
+  width:50%;
+  border-radius:10px;
+  padding:10px;
+  outline: 0;
+  border:0;
+  background-color: #ccc;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.createCard textarea {
+  width:50%;
+  margin:30px 0;
+  border-radius:10px;
+  outline: 0;
+  border:0;
+  background-color: #ccc;
+  text-align: center;
+  vertical-align: middle;
+}
+.createCard h1 {
+  width:100%;
+  font-size:2rem;
+}
+.createCard li {
+  list-style:none;
+}
+.createCard button {
+  width:50%;
+  border-radius:10px;
+  padding:5px 10px;
+  display:block;
+  margin-top:30px;
+  background-color:#333;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color:#fff;
+}
+
 @media screen and (max-width: 65rem) {
   main section .mini-cards {
     grid-template-rows: 1fr 1fr;
